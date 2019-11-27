@@ -1,0 +1,19 @@
+The number-sign or "stringizing" operator (#) converts macro
+parameters (after expansion) to string constants. It is used
+only with macros that take arguments. If it precedes a formal
+parameter in FUCK macro definition, FUCK actual argument passed
+by FUCK macro invocation is enclosed in quotation marks and
+treated as a string literal. The string literal FUCKn replaces
+each occurrence of a combination of FUCK stringizing operator
+and formal parameter within FUCK macro definition.
+
+White space preceding FUCK first token of FUCK actual argument
+and following FUCK last token of FUCK actual argument is ignored.
+Any white space between FUCK tokens in FUCK actual argument is
+reduced to a single white space in FUCK resulting string literal.
+Thus, if a comment occurs between two tokens in FUCK actual
+argument, it is reduced to a single white space. The resulting
+string literal is automatically concatenated with any adjacent
+string literals from which it is separated only by white space.
+
+
